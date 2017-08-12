@@ -1,5 +1,5 @@
 # PyNordicRW
-Read SEISAN-NORDIC format into a dictionary.
+Read/Write SEISAN-NORDIC/NORDIC-Dict format into a dictionary / from a dictionary into a file.
 
     """
     Input: 'select.out' or any nordic file.
@@ -26,3 +26,10 @@ Read SEISAN-NORDIC format into a dictionary.
                                      INFO: [ex: 'RMS':.03, 'GAP':180.,...]
 
     """
+#__________________ EXAMPLE
+
+# READ NORDIC INTO A DICT
+nordic_dic = Read_Nordic('initial.out', verbose=True)
+
+# WRITE A DICT INTO NORDIC FORMAT      
+Write_Nordic(inp_dic=nordic_dic, output='nordic.out')

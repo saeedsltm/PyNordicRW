@@ -28,8 +28,8 @@ Read/Write SEISAN-NORDIC/NORDIC-Dict format into a dictionary / from a dictionar
     """
 #__________________ EXAMPLE
 
-# READ NORDIC INTO A DICT
+#-READ NORDIC INTO A DICT
 nordic_dic = Read_Nordic('initial.out', verbose=True)
 
-# WRITE A DICT INTO NORDIC FORMAT      
+#-WRITE A DICT INTO NORDIC FORMAT      
 Write_Nordic(inp_dic=nordic_dic, output='nordic.out')
